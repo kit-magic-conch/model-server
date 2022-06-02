@@ -13,6 +13,7 @@ def root():
     request.files['audio'].save(filename)
     result = recognize_emotion(filename)
     os.remove(filename)
+    print(result)
     return result
 
 
