@@ -1,7 +1,7 @@
 from flask import Flask, request
 import os
 import uuid
-from model import *
+from model import recognize_emotion
 
 
 app = Flask(__name__)
